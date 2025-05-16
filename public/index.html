@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SHeares Web Wordcloud</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            position: relative;
+        }
+
+        #background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(270deg, #ff7f50, #ffb347, #ff7f50);
+            background-size: 600% 600%;
+            animation: gradientShift 15s ease infinite;
+            z-index: -1;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        #wordcloud {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+            z-index: 0;
+            cursor: default;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <canvas id="wordcloud"></canvas>
+
+    <script src="config.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/wordcloud@1.1.2/src/wordcloud2.js"></script>
+    <script>
+        const canvas = document.getElementById('wordcloud');
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', () => {
+            resizeCanvas();
+            drawCloud();
+        });
+        resizeCanvas();
+
+        function drawCloud() {
+            WordCloud(canvas, {
+                list: names,
+                gridSize: 30,
+                weightFactor: size => size * 3,
+                fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+                color: function (word, weight) {
+                    if (word === "SHeares Web") return "#fff";
+                    return `rgba(0, 0, 0, ${0.6 + weight / 50})`;
+                },
+                backgroundColor: "transparent",
+                rotateRatio: 0,
+                origin: [canvas.width / 2, canvas.height / 2],
+                drawOutOfBound: false,
+                shrinkToFit: true,
+                drawWord: function (item, info) {
+                    if (item[0] === "SHeares Web") {
+                        info.ctx.lineWidth = 5;
+                        info.ctx.strokeStyle = 'rgba(255,255,255,0.7)';
+                        info.ctx.strokeText(item[0], info.x, info.y);
+                    }
+                    info.ctx.fillText(item[0], info.x, info.y);
+                }
+            });
+        }
+
+        drawCloud();
+    </script>
+</body>
+
+</html>
