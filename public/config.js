@@ -61,6 +61,7 @@ const names = [
     ["Yk", 10],
     ["Ys", 10],
     ["Darius", 10],
+    ["Andrei", 10],
 
     ["Megann", 10],
 
