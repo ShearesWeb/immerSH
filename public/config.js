@@ -49,4 +49,16 @@ const names = [
     ["Jian Liang", 10],
     ["Mok", 10],
     ["Jane", 10],
+    ["Max", 10],
+    ["Aahil", 10],
+    ["Neeraj", 10],
+    ["Daniel", 10],
+    ["Andrea", 10],
+    ["Jingyi", 10],
+    ["Ruo Qi", 10],
+    ["Jerick", 10],
+    ["Mf", 10],
+    ["Yk", 10],
+    ["Ys", 10],
+
 ];
