@@ -12,6 +12,8 @@ const names = [
     ["Zach", 10],
     ["Arel", 10],
     ["Terry", 10],
+    ["Norman", 10],
+    ["Joash", 10],
 
     ["Yuzhe", 10],
 
