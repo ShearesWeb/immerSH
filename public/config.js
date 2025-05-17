@@ -15,7 +15,7 @@ const names = [
     ["Norman", 10],
     ["Joash", 10],
 
-    ["Yuzhe", 10],
+    ["Faith Ningger", 10],
 
 
 ];
