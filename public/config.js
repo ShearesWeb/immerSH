@@ -30,5 +30,7 @@ const names = [
 
     ["Laura", 10],
     ["Lauren", 10],
+    ["Chloe", 10],
+    ["Avril", 10],
 
 ];
