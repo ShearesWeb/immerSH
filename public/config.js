@@ -4,4 +4,5 @@ const names = [
     ["Daniel", 10],
     ["Darren", 10],
     ["Syazz", 10],
+    ["Marcus", 10],
 ];
