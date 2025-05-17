@@ -10,6 +10,8 @@ const names = [
     ["Kyra", 10],
     ["Isaac", 10],
     ["Zach", 10],
+    ["Arel", 10],
+    ["Terry", 10],
 
     ["Yuzhe", 10],
 
