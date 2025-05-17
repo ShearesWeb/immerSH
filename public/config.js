@@ -35,4 +35,13 @@ const names = [
     ["Ankai", 10],
     ["Yan Hao", 10],
     ["Yifei", 10],
+    ["Gerald", 10],
+    ["Ryan", 10],
+    ["Kyle", 10],
+    ["Kai Wen", 10],
+    ["Zhe Kai", 10],
+    ["Jaine", 10],
+    ["Lok Kay", 10],
+    ["Germaine", 50],
+
 ];
