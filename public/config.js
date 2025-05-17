@@ -25,7 +25,7 @@ const names = [
     ["Hyun Jin", 10],
     ["Yoomee", 10],
     ["Ben", 10],
-
+    ["Zheng Yang", 10],
     ["Faith Ningger", 10],
 
 
