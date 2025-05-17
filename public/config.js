@@ -1,5 +1,6 @@
 // config.js
 const names = [
-    ["SHeares Web", 25],  // biggest word
-    ["Daniel (Chairman)", 7],
+    ["SHeares Web", 30],  // biggest word
+    ["Daniel", 10],
+    ["Darren", 10],
 ];
