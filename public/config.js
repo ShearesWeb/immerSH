@@ -42,7 +42,7 @@ const names = [
     ["Zhe Kai", 10],
     ["Jaine", 10],
     ["Lok Kay", 10],
-    ["Germaine", 50],
+    ["Germaine", 10],
     ["Malcolm", 10],
     ["Karyik", 10],
     ["Chen Yu", 10],
