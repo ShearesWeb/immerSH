@@ -8,4 +8,6 @@ const names = [
     ["Mal", 10],
     ["Claire", 10],
     ["Kyra", 10],
+    ["*Isaac", 10],
+
 ];
