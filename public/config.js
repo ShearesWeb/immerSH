@@ -47,5 +47,6 @@ const names = [
     ["Karyik", 10],
     ["Chen Yu", 10],
     ["Jian Liang", 10],
-    ["Dylen", 10],
+    ["Mok", 10],
+    ["Jane", 10],
 ];
