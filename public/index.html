@@ -82,7 +82,10 @@
         function drawCloud() {
             WordCloud(canvas, {
                 list: names,
-                gridSize: 40,
+                gridSize: 42,
+                wait: 20,
+                rotateRatio: 1,
+                shape: "diamond",
                 weightFactor: size => size * 3,
                 fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
                 color: function (word, weight) {
