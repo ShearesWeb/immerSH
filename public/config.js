@@ -32,5 +32,6 @@ const names = [
     ["Lauren", 10],
     ["Chloe", 10],
     ["Avril", 10],
-
+    ["Ankai", 10],
+    ["Yan Hao", 10],
 ];
