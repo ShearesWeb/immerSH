@@ -9,6 +9,9 @@ const names = [
     ["Claire", 10],
     ["Kyra", 10],
     ["Isaac", 10],
-    ["Kersie", 10],
+    ["Zach", 10],
+
+    ["Yuzhe", 10],
+
 
 ];
